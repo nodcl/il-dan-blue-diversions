@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 from sympy import *
-import pdb
 
 init_printing(use_unicode=True)
 
