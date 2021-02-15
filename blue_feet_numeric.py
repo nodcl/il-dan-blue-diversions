@@ -33,7 +33,7 @@ class FLSwingKickToSideStance:
                                        feet in left-front or right-front
                                        stance.
             dist_frontback(float,int): The front-back distance between your
-                                       feetin in left-front or right-front
+                                       feet in in left-front or right-front
                                        stance.
 
         Returns:
@@ -275,10 +275,9 @@ def main():
                               'left-front or right-front stance')
     aparser.add_argument('-f', '--fbdist', required=True, type=float,
                          help='The front-back distance between your feet in '
-                              'ready stance')
-    aparser.add_argument('-s', '--side', required=True, choices=CHOICES_LR,
-                         help='The front-back distance between your feet in '
                               'left-front or right-front stance')
+    aparser.add_argument('-s', '--side', required=True, choices=CHOICES_LR,
+                         help='Which side of the pattern to perform')
 
     args = aparser.parse_args()
 
